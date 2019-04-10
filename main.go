@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-    fmt.Println("Starting the frontend application...")
+    fmt.Println("Starting the frontend application... 1.0")
 
     servicea := "no results"
 	http.HandleFunc("/", func (w http.ResponseWriter, r *http.Request) {
