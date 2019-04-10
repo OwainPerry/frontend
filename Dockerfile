@@ -9,4 +9,5 @@ RUN go build -o /app/frontend .
 
 FROM alpine:3.9
 COPY --from=builder /app/frontend /frontend
-CMD ["/fontend"]
+EXPOSE 9090
+CMD ["/frontend"]
