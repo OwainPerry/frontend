@@ -20,12 +20,12 @@ func main() {
             data, _ := ioutil.ReadAll(response.Body)
             servicea = string(data)
         }
-        response, err := http.Get("http://serviceb:8080/")
-        if err != nil {
+        response1, err1 := http.Get("http://serviceb:8080/")
+        if err1 != nil {
             fmt.Printf("The HTTP request failed serviceb with error %s\n", err)
         } else {
-            data, _ := ioutil.ReadAll(response.Body)
-            servicea = string(data)
+            data1, _ := ioutil.ReadAll(response1.Body)
+            serviceb = string(data1)
         }
         fmt.Fprintf(w, "<html><body>")
         fmt.Fprintf(w, "first service: %s <br />",servicea)
