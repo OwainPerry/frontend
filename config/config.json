@@ -1,0 +1,5 @@
+{
+    "Port" : 9090,
+    "ServiceA" : "http://svc-servicea:8080/",
+    "ServiceB" : "http://svc-serviceb:8080/"
+}
